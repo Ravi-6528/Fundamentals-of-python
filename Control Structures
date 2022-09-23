@@ -1,4 +1,10 @@
-#amoeba multiplication
+#The environmental eco club  have discovered a new Amoeba that grows in the order of a Fibonacci series every month.
+They are exhibiting their amoeba in a national conference. They want to know the size of the amoeba at a particular time instant.
+If a particular month’s index is given can you write a  program that displays the amoeba’s size……???
+Note: The size of the amoeba on month 1, 2, 3, 4, 5, 6,7 ..will be 0, 1, 1, 2, 3, 5, 8 respectively.
+[All text in bold corresponds to input and the rest to output]
+
+#code
 
 a=int(input())
 s=0
@@ -17,7 +23,9 @@ else:
     print("The amoeba size is %d"%s)
     
 
-#Factorial
+#Write a program to determine whether n is a factorial number or not. A factorial number is a number that is a factorial of another number.
+
+#code
 
 n=int(input())
 temp=n
@@ -31,7 +39,10 @@ else:
     print("No")
     
 
-#Sum of Digits
+#Write a program to find the sum of digits in a given number. Program to find the sum of digits of the given number is discussed here. 
+For example, let the input number be 719. The sum of digits of 719 = 7 + 1 + 9 = 17
+
+#code
 
 n=int(input())
 sum=0
@@ -42,7 +53,10 @@ while (n>0):
 print(sum)
    
 
-#Friendly pair
+#Program to find if the given numbers are Friendly pair or not (Amicable or not) is discussed here.
+Friendly Pair are two or more numbers with a common abundance.
+
+#code
 
 num1=int(input())
 num2=int(input())
@@ -60,7 +74,10 @@ else:
    print(" Not  Friendly Pair")
    
 
-#Harshard Number
+#Program to check whether a number is a Harshad number or not (Niven number) is discussed here.
+Harshad Number is an integer that is divisible by the sum of its digits.
+
+#code
 
 n=int(input())
 sum=0
@@ -75,7 +92,10 @@ else:
     print("Not Harshad Number")
     
         
-#LCM of two numbers
+#Write a program to find LCM of two numbers is discussed here. Two numbers are obtained as input and the prime factors of both the numbers are found.
+The product of the union of prime factors of both the numbers gives the LCM of the two numbers.
+
+#code
 
 a=int(input())
 b=int(input())
@@ -86,8 +106,12 @@ for i in range(1,c+1):
 print("LCM of %d and %d is %d"%(a,b,i))    
 
 
-#Palindrome of a numbern=int(input())
+#Program to check whether the given number is a Palindrome or  Not a Palindrome is discussed here.
+Any number is said to be a palindrome if the original number and the reverse of the original number are the same.
 
+#code
+
+n=int(input())
 rev=0
 temp=n
 while n!=0:
@@ -100,7 +124,13 @@ else:
     print("Not a Palindrome")
     
 
-#Perfect Number
+#Program to check whether a given number is a perfect number or not is discussed here.
+A perfect number is a number which is equal to the sum of its proper positive divisors.
+For example, 6 is a perfect number.
+The divisors of 6 are 1, 2 and 3.
+1 + 2 + 3 = 6.
+
+#code
 
 n=int(input())
 sum=0
@@ -114,15 +144,19 @@ else:
     print("Not a Perfect Number")
     
 
-#Prime number
+#Write a program to find whether the given number is Prime number or Not.
+
+#code
 
 n=int(input())
 count=0
 for i in range(1,n+1):
     if n%i==0:
     
+#Program to find prime numbers in a given range is discussed here. A number is said to be prime if it is divisible by 1 and the number itself.
+Program to find prime numbers in a given range using loop
 
-#Prime Numbers in a Range
+#code
 
 a=int(input())
 b=int(input())
@@ -140,7 +174,10 @@ else:
         print("Not a Prime")
         
 
-#Prime Numbers in a Range
+#Program to find prime numbers in a given range is discussed here. A number is said to be prime if it is divisible by 1 and the number itself.
+Program to find prime numbers in a given range using loop
+
+#code
 
 a=int(input())
 b=int(input())
@@ -153,7 +190,9 @@ for j in range(a,b+1):
         print(j)
         
 
-#Reverse of a number
+#Write program to reverse a number is discussed here. We can reverse a number using loop and arithmetic operators in both iterative and recursive approaches.
+
+#code
 
 n=int(input())
 rev=0
@@ -164,7 +203,10 @@ while n!=0:
 print(rev)
     
 
-#strong number
+#Program to check if a given number is a strong number or not is discussed here. 
+A strong number is a number in which the sum of the factorial of the digits is equal to the number itself.
+
+#code
 
 sum=0  
 
@@ -189,7 +231,9 @@ else:
     print(" Not a Strong Number")
     
 
-#Sum of natural numbers
+#Write a program to find the sum of first N natural numbers.
+
+#code
 
 n=int(input())
 sum=0
@@ -198,8 +242,11 @@ for i in range(1,n+1):
 print(sum)
 
 
-#Sum of Numbers in a rangea=int(input())
+#Write a program to find the sum of numbers in a given range is discussed here. Given the starting and ending interval,
+the sum of all the numbers in that range will be displayed as output.
+#code
 
+a=int(input())
 b=int(input())
 sum=0
 for i in range(a,b+1):
