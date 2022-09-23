@@ -1,0 +1,146 @@
+#greastest of two numbers
+a=int(input())
+b=int(input())
+if a==b:
+  print(f"{a} is equal to {b}")
+elif(a>b):
+   print(f"{a} is greater than {b}")
+else:
+   print(f"{a} is less than {b}")
+
+
+#vowels or consonants
+s=input()
+if s in "a,e,i,o,u,A,E,I,O,U":
+    print("Vowel")
+elif s in"b,c,d,f,g,h,j,k,l,m,n,p,q,r,s,t,v,w,x,y,z,B,C,D,F,G,H,J,K,L,M,N,P,Q,R,S,T,V,W,X,Y,Z":
+    print("Consonant")
+else:
+    print("Not an alphabet")
+    
+    #rading system
+    x=int(input())
+if x==100:
+  print("s")
+elif x>=90 and x<=100:
+    print("A")
+elif x>=80 and x<=90:
+    print("B")
+elif x>=70 and x<=80:
+    print("C")
+elif x>=60 and x<=70:
+    print("D")
+elif x>=50 and x<=60:
+    print("E")
+elif x<50:
+    print("Fail")
+else:
+    print("Invalid Input")
+    
+    #profit or loss
+    x=float(input("Enter the price of a dozen mangoes\n"))
+y=float(input("Enter the price at which 1 mango is being sold\n"))
+y=y*12
+if x>y:
+    print("Loss : Rs.%.2f"%(x-y))
+elif x<y:
+    print("Profit : Rs.%.2f"%(y-x))
+else:
+    print("No profit nor loss")
+    
+    #fee collection
+    print("Enter the student type")
+st=input()
+if st=="MSDS":
+    print("Enter tuition fee")
+    TF=float(input())
+    print("Enter bus fee")
+    BF=float(input())
+    X=TF+BF
+    print("The fees to be paid by the student is Rs.","%.2f"%X)
+elif st=="MSH":
+    print("Enter tuition fee")
+    TF=float(input())
+    print("Enter hostel fee")
+    HF=float(input())
+    Y=TF+HF
+    print("The fees to be paid by the student is Rs.","%.2f"%Y)
+elif st=="MGSDS":
+    print("Enter tuition fee")
+    TF=float(input())
+    print("Enter bus fee")
+    BF=float(input())
+    Z=((150/100)*TF)+BF
+    print("The fees to be paid by the student is Rs.","%.2f"%Z)
+elif st=="MGSH":
+    print("Enter tuition fee")
+    TF=float(input())
+    print("Enter hostel fee")
+    HF=float(input())
+    L=((150/100)*TF)+HF
+    print("The fees to be paid by the student is Rs.","%.2f"%L)
+    
+    
+    #Y2K Problem Detector
+    print("Enter Year of Birth")
+Birth=int(input())
+print("Enter Current Year")
+Current=int(input())
+if Current<Birth:
+   x=100-Birth
+   y=x+Current
+   print("Your age is:",y)
+else:
+    print("Your age is:",Current-Birth)
+    
+    #lab allocation
+    x=int(input("Enter x\n"))
+y=int(input("Enter y\n"))
+z=int(input("Enter z\n"))
+if x<y and x<z:
+    print("L1 has the minimal seating capacity")
+elif y<x and y<z:
+    print("L2 has the minimal seating capacity")
+else:
+    print("L3 has the minimal seating capacity")
+    
+    #gardening-1
+    a=int(input())
+b=int(input())
+c=int(input())
+if c%b==0:
+    print("Yes")
+elif c%a==1:
+    print("Yes")
+else:
+    print("No")
+    
+    #Hotel Tariff Calculator
+    m=int(input())
+r=float(input())
+d=int(input())
+if m==1:
+    print("Hotel Tariff:Rs.""%.2f"%(r*d))
+if m==2:
+    print("Hotel Tariff:Rs.""%.2f"%(r*d))
+if m==3:
+    print("Hotel Tariff:Rs.""%.2f"%(r*d))
+if m==7:
+    print("Hotel Tariff:Rs.""%.2f"%(r*d))
+if m==8:
+    print("Hotel Tariff:Rs.""%.2f"%(r*d))
+if m==9:
+    print("Hotel Tariff:Rs.""%.2f"%(r*d))
+if m==10:
+    print("Hotel Tariff:Rs.""%.2f"%(r*d))
+if m==4:
+     print("Hotel Tariff:Rs.""%.2f"%((r+(r*0.2))*d))
+if m==5:
+    print("Hotel Tariff:Rs.""%.2f"%((r+(r*0.2))*d))
+if m==6:
+    print("Hotel Tariff:Rs.""%.2f"%((r+(r*0.2))*d))
+if m==11:
+    print("Hotel Tariff:Rs.""%.2f"%((r+(r*0.2))*d))
+if m==12:
+    print("Hotel Tariff:Rs.""%.2f"%((r+(r*0.2))*d))
+if m>12:
