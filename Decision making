@@ -1,4 +1,14 @@
-#greastest of two numbers
+#Get two integers a and b from the user and write a python program to relate 2 integers as equal to, less than or greater than. 
+Input format: 
+Input consist of 2 integers 
+The first input corresponds to the first number(a) 
+The second input corresponds to the second number(b) 
+Output format: 
+If the first number is equal to the second number, print "a is equal to b". 
+Otherwise, print "a greater than b" or "a less than b"
+
+#code
+
 a=int(input())
 b=int(input())
 if a==b:
@@ -8,8 +18,14 @@ elif(a>b):
 else:
    print(f"{a} is less than {b}")
 
+#Write a python program to check whether the given character is vowel or consonant or Not an alphabet.
+Input format: 
+The input consist of a character 
+Output format: 
+The output consists of a below-given string “Vowel” / “Consonant” / “Not an alphabet”
 
-#vowels or consonants
+#code
+
 s=input()
 if s in "a,e,i,o,u,A,E,I,O,U":
     print("Vowel")
@@ -17,9 +33,24 @@ elif s in"b,c,d,f,g,h,j,k,l,m,n,p,q,r,s,t,v,w,x,y,z,B,C,D,F,G,H,J,K,L,M,N,P,Q,R,
     print("Consonant")
 else:
     print("Not an alphabet")
-    
-    #rading system
-    x=int(input())
+
+#The newly appointed Vice Chancellor of Anna University wanted to create a automated grading system for the students to check their grade. When a student enter a mark, the grading system displays the corresponding grade.
+Write a program to solve the given problem.
+Marks scored      Grade
+100                 S
+(90,100)            A
+(80,90)             B
+(70,80)             C
+(60,70)             D
+(50,60)             E
+<50                 F
+The interval [a,b) includes all numbers greater than or equal to a and less than b.
+Input and Output Format:
+Input consists of a single integer which corresponds to the marks scored by the student. Print Invalid Input if it is not in the range 0 to 100.
+
+#code
+
+x=int(input())
 if x==100:
   print("s")
 elif x>=90 and x<=100:
@@ -37,8 +68,14 @@ elif x<50:
 else:
     print("Invalid Input")
     
-    #profit or loss
-    x=float(input("Enter the price of a dozen mangoes\n"))
+#A fruitseller buys a dozen mango at Rs.X. He sells 1 mango at Rs.Y. Write a program to determine the profit or loss in Rs. for the fruitseller.
+Input and Output Format:
+Input consists of 2 floating point numbers which correspond to X and Y.
+Refer sample input and output for formatting specifications. .
+
+#code
+
+x=float(input("Enter the price of a dozen mangoes\n"))
 y=float(input("Enter the price at which 1 mango is being sold\n"))
 y=y*12
 if x>y:
@@ -47,42 +84,56 @@ elif x<y:
     print("Profit : Rs.%.2f"%(y-x))
 else:
     print("No profit nor loss")
-    
-    #fee collection
-    print("Enter the student type")
-st=input()
+
+#Write a program to determine the fee amount to be collected from a student. The input to the program are the type of the student, tuition fee, bus fee, hostel fee.
+Refer the table below for fee details.
+Student Type                student Type denoted as                    Fee Details
+Merit Seat Day Scholar             MSDS                          Tuition fee + Bus fee
+Merit Seat Hosteller               MSH                           Tuition fee + Hostel fee
+Management Seat Day Scholar        MGSDS                         150% of Tuition fee + Bus fee
+Management Seat Hosteller          MGSH                          150% of Tuition fee + Hostel fee
+Input and Output Format:
+Input consists of a string (student type), tuition fee (float), bus fee (float) and hostel fee (float).
+All floating point numbers are displayed correct to 2 decimal places.
+Refer sample input and output for formatting specifications.
+All text in bold corresponds to input and the rest corresponds to output.
+
+#code
+
+st=str(input("Enter the student type\n"))
+if st=="MSH":
+    tf=float(input("Enter tuition fee\n"))
+    hf=float(input("Enter hostel fee\n"))
+    t=tf+hf
+    print("The fees to be paid by the student is Rs.""%.2f\n"%t)
 if st=="MSDS":
-    print("Enter tuition fee")
-    TF=float(input())
-    print("Enter bus fee")
-    BF=float(input())
-    X=TF+BF
-    print("The fees to be paid by the student is Rs.","%.2f"%X)
-elif st=="MSH":
-    print("Enter tuition fee")
-    TF=float(input())
-    print("Enter hostel fee")
-    HF=float(input())
-    Y=TF+HF
-    print("The fees to be paid by the student is Rs.","%.2f"%Y)
-elif st=="MGSDS":
-    print("Enter tuition fee")
-    TF=float(input())
-    print("Enter bus fee")
-    BF=float(input())
-    Z=((150/100)*TF)+BF
-    print("The fees to be paid by the student is Rs.","%.2f"%Z)
-elif st=="MGSH":
-    print("Enter tuition fee")
-    TF=float(input())
-    print("Enter hostel fee")
-    HF=float(input())
-    L=((150/100)*TF)+HF
-    print("The fees to be paid by the student is Rs.","%.2f"%L)
-    
-    
-    #Y2K Problem Detector
-    print("Enter Year of Birth")
+    tf=float(input("Enter tuition fee\n"))
+    bf=float(input("Enter bus fee\n"))
+    y=tf+bf
+    print("The fees to be paid by the student is Rs.""%.2f\n"%y)
+if st=="MGSDS":
+    tf=float(input("Enter tuition fee\n"))
+    bf=float(input("Enter bus fee\n"))
+    u=(tf*1.5)+bf
+    print("The fees to be paid by the student is Rs.""%.2f\n"%u)
+if st=="MGSH":
+    tf=float(input("Enter tuition fee\n"))
+    hf=float(input("Enter hostel fee\n"))
+    x=(tf*1.5)+hf
+    print("The fees to be paid by the student is Rs.""%.2f\n"%x)
+
+#Write a program that asks a user for their birth year encoded as two digits (like "62") and for the current year, also encoded as two digits (like "99").
+The program is to correctly write out the user’s age in years.
+Input Format:
+Input consists of 2 integers. 
+The first integer corresponds to the last 2 digits of the birth year. 
+The second integer corresponds to the last 2 digits of the current year.
+Output Format:
+Refer sample input and output for further formatting specifications.
+
+#code
+
+print("Enter Year of Birth")
 Birth=int(input())
 print("Enter Current Year")
 Current=int(input())
@@ -93,8 +144,14 @@ if Current<Birth:
 else:
     print("Your age is:",Current-Birth)
     
-    #lab allocation
-    x=int(input("Enter x\n"))
+#There are 3 labs in the CSE department (L1, L2 and L3) with a seating capacity of x, y and z. find the lab which has the minimal seating capacity. 
+Input and Output Format:
+Assume that x, y and z are always distinct.
+Refer sample input and output.
+
+#code
+
+x=int(input("Enter x\n"))
 y=int(input("Enter y\n"))
 z=int(input("Enter z\n"))
 if x<y and x<z:
@@ -104,8 +161,23 @@ elif y<x and y<z:
 else:
     print("L3 has the minimal seating capacity")
     
-    #gardening-1
-    a=int(input())
+#Dora is interested so much in gardening and she plants more trees in her garden.
+She plants trees in a rectangular fashion with the order of rows and columns and numbered the trees in row-wise order.
+She planted the mango tree only in a 1st row, 1st column and last column.
+So given the tree number, your task is to find whether the given tree is a mango tree or not?
+Write a program to check whether the given number is a mango tree or not. 
+Input format: 
+Input consists of 3 integers 
+The first input denotes the number of rows 
+The second input denotes the number of columns 
+The third input denotes the tree number 
+Output format:
+If the given number is a mango tree, print "Yes". 
+Otherwise, print "No".
+
+#code
+
+a=int(input())
 b=int(input())
 c=int(input())
 if c%b==0:
@@ -115,32 +187,44 @@ elif c%a==1:
 else:
     print("No")
     
-    #Hotel Tariff Calculator
-    m=int(input())
+#Write a  program to calculate the hotel tariff. The room rent is 20% high during peak seasons [April-June, November-December] .
+Input Format:
+The first line of the input contains an integer which corresponds to the number of the month. [ January is 1, Feb is 2 and so on].  
+The second line of the input consists of a floating point number which corresponds to the room rent per day. 
+The third line of the input consists of an integer which corresponds to the number of days stayed in the hotel.
+Output Format:
+Output consists of a single line which displays the hotel tariff to be payed.  
+Hotel tariff should be displayed correct to 2 decimal places.
+
+#code
+
+#python
+m=int(input())
 r=float(input())
 d=int(input())
 if m==1:
-    print("Hotel Tariff:Rs.""%.2f"%(r*d))
+    print( "Hotel Tariff:Rs.""%.2f"%(r*d))
 if m==2:
-    print("Hotel Tariff:Rs.""%.2f"%(r*d))
+    print( "Hotel Tariff:Rs.""%.2f"%(r*d))
 if m==3:
-    print("Hotel Tariff:Rs.""%.2f"%(r*d))
+    print( "Hotel Tariff:Rs.""%.2f"%(r*d))
 if m==7:
-    print("Hotel Tariff:Rs.""%.2f"%(r*d))
+    print( "Hotel Tariff:Rs.""%.2f"%(r*d))
 if m==8:
-    print("Hotel Tariff:Rs.""%.2f"%(r*d))
+    print( "Hotel Tariff:Rs.""%.2f"%(r*d))
 if m==9:
-    print("Hotel Tariff:Rs.""%.2f"%(r*d))
+    print( "Hotel Tariff:Rs.""%.2f"%(r*d))
 if m==10:
-    print("Hotel Tariff:Rs.""%.2f"%(r*d))
+    print( "Hotel Tariff:Rs.""%.2f"%(r*d))
 if m==4:
-     print("Hotel Tariff:Rs.""%.2f"%((r+(r*0.2))*d))
+    print( "Hotel Tariff:Rs.""%.2f"%((r+(r*0.2))*d))
 if m==5:
-    print("Hotel Tariff:Rs.""%.2f"%((r+(r*0.2))*d))
+    print( "Hotel Tariff:Rs.""%.2f"%((r+(r*0.2))*d))
 if m==6:
-    print("Hotel Tariff:Rs.""%.2f"%((r+(r*0.2))*d))
+    print( "Hotel Tariff:Rs.""%.2f"%((r+(r*0.2))*d))
 if m==11:
-    print("Hotel Tariff:Rs.""%.2f"%((r+(r*0.2))*d))
+    print( "Hotel Tariff:Rs.""%.2f"%((r+(r*0.2))*d))
 if m==12:
-    print("Hotel Tariff:Rs.""%.2f"%((r+(r*0.2))*d))
+    print( "Hotel Tariff:Rs.""%.2f"%((r+(r*0.2))*d))
 if m>12:
+    print("Invalid Input")
