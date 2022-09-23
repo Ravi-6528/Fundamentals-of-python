@@ -1,10 +1,24 @@
-#series-1
+#Write a program to generate the following series --- 1,4,9,16,25, .... 
+Input format: 
+The input containing an integer which denotes 'n' 
+Output format: 
+Print the series and refer the sample output for formatting
+
+#code
+
 n=int(input())
 for i in range(1,n+1):
     n=i**2
     print(n,end='  ')
     
-#series-2
+#Write a program to generate the following series --- 6,11,21,36,56,... 
+Input format: 
+The input containing an integer which denotes 'n' 
+Output format: 
+Print the series and refer the sample output for formatting.
+
+#code
+
 n=int(input())
 x=6
 print(x)
@@ -12,19 +26,40 @@ for i in range(1,n):
     x=x+i*5
     print(x)
     
-#series-3
+#Write a program to generate the first n terms in the series --- 3, 9, 27, 81,...,... 
+Input format: 
+The input containing an integer which denotes 'n' 
+Output format: 
+Print the series and refer the sample output for formatting
+
+#code
+
 n=int(input())
 for i in range(1,n+1):
     n=3**i
     print(n,end=' ')
     
-#series-4
+#Write a program to generate the following series --- 0.5,1.5,4.5,13.5,...
+Input format: 
+The input containing an integer which denotes 'n' 
+Output format: 
+Print the series and refer the sample output for formatting.
+
+#code
+
 n=int(input())
 for i in range(0,n):
     a=((3**i)/2)
     print(a)
     
-#series-5
+#Write a program to generate the following series --- 121,225,361,... 
+Input format: 
+The input containing an integer which denotes 'n' 
+Output format: 
+Print the series and refer the sample output for formatting.
+
+#code
+
 n=int(input())
 x=11
 for i in range(1,n+1):
@@ -32,7 +67,14 @@ for i in range(1,n+1):
     print(a)
     x=x+4
     
-#series-6
+#Write a program to generate the following series --- 0,2,8,14,...,34 
+Input format: 
+The input containing an integer which denotes 'n'
+Output format: 
+Print the series and refer the sample output for formatting.
+
+#code
+
 n=int(input())
 for i in range(1,n+1):
     if (i%2!=0):
@@ -40,7 +82,14 @@ for i in range(1,n+1):
     else:
         print((i**2)-2)
         
-#series-7
+#Write a program to generate the following series --- 1, 2.0, 3.0, 6.0, 9.0, 18.0, 27.0,... 
+Input format: 
+The input containing an integer which denotes 'n' 
+Output format: 
+Print the series and refer the sample output for formatting
+
+#code
+
 n=int(input())
 x=1
 print(x)
@@ -55,7 +104,14 @@ for i in range(1,n-1):
             y=y*3.0
             print(y)
             
-#series-8
+#Write a program to generate the following series 4, 5, 9, 18, 34,... 
+Input format: 
+The input containing an integer which denotes 'n' 
+Output format: 
+Print the series and refer the sample output for formatting.
+
+#code
+
 n=int(input())
 a=4
 print(a)
@@ -63,7 +119,14 @@ for i in range(1,n):
     a=a+(i**2)
     print(a)
     
-#series-9
+#Write a program to generate the following series 2, 3, 8, 63, 3968
+Input format: 
+The input containing an integer which denotes 'n' 
+Output format: 
+Print the series and refer the sample output for formatting
+
+#code
+
 n=int(input())
 x=2
 print(x)
@@ -71,8 +134,14 @@ for i in range (0,n-1):
     x=x**2-1
     print(x)
     
-    
-#series-10
+#Write a program to generate the following series 95.0, 115.5, 138.0,..., 189.0 
+Input format: 
+The input containing an integer which denotes 'n' 
+Output format:
+Print the series and refer the sample output for formatting
+
+#code
+
 n = int(input())
 x = 95.0
 ctr = 1
