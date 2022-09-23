@@ -1,0 +1,62 @@
+#binary equivalent of numbers
+def binary(n):
+    if n > 1:
+       binary(n//2)
+    print(n % 2,end = '')
+dec = int(input())
+binary(dec)
+
+#Fibonacci series
+ def fibo(n):
+    if n<=1:
+        return n
+    else:
+        return (fibo(n-1)+fibo(n-2))
+n=int(input())
+for i in range(n):
+    print(fibo(i), end=" ")
+    
+# odd or even    
+ def evenodd(n):
+    if n==0:
+        return True
+    elif n==1:
+        return False
+    else:
+        return evenodd(n-2)
+n=int(input())
+if(evenodd(n)):
+    print("Even!")
+else:
+    print("Odd!")
+ 
+ #Factorial
+ def rev_fact(n):
+    if n==0 or n==1:
+        return 1
+    else:
+        return n*rev_fact(n-1)
+num=int(input())
+print(rev_fact(num))
+
+
+# lcm of two numbers
+ def gcd(a,b):
+	if a == 0:
+		return b
+	return gcd(b % a, a)
+def lcm(a,b):
+	return (a // gcd(a,b))* b
+a = int(input())
+b = int(input())
+print (lcm(a, b))
+
+ # decimal to binary
+ def rec_bin(n):
+   if n > 1:
+       rec_bin(n//2)
+   print(n % 2,end = '')
+dec =int(input())
+
+rec_bin(dec)
+print()
