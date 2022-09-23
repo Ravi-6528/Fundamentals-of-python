@@ -228,3 +228,69 @@ if m==12:
     print( "Hotel Tariff:Rs.""%.2f"%((r+(r*0.2))*d))
 if m>12:
     print("Invalid Input")
+    
+      #RGY lights
+  s=float(input())
+d=float(input())
+t=float(input())
+t1=s/d
+if(t1<t):
+    print("no")
+else:
+    print("yes")
+    
+    #burget
+    a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+e=int(input())
+if(a*350.34+b*230.90+c*190.55+d*125.30+e*180.90 < 15000):
+    print("yes")
+else:
+    print("no")
+    
+    #sece dining
+    s=input()
+n=int(input())
+if(s=="front" and n==1 or s=="rear" and n==2):
+    print("Left Handed")
+elif(s=="front" and n==2 or s=="rear" and n==1):
+    print("Right Handed")
+else:
+    print("Invalid input")
+    
+    #intersection of circle
+    x1=int(input())
+y1=int(input())
+x2=int(input())
+y2=int(input())
+r1=int(input())
+r2=int(input())
+a=(x1-x2)**2
+b=(y1-y2)**2
+c=(r1+r2)**2
+if(a+b==c):
+    print("The circles are tangential")
+elif(a+b<c):
+    print("The circles  overlap")
+else:
+    print("The circles donot overlap")
+    
+    #microwave oven
+    print("Enter the number of items")
+I=int(input())
+print("Enter the single item heating time")
+H=float(input())
+if(I==1):
+    print("The recommended heating time is",H)
+elif(I==2):
+    H1=H+50/100*H
+    print("The recommended heating time is","%.2f"%H1)
+elif(I==3):
+    H2=2*H
+    print("The recommended heating time is",H2)
+elif(I>3):
+    print("Number of items is more")
+else:
+    print("Not recommended")
