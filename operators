@@ -1,0 +1,35 @@
+#arthimetic operators
+def add(a,b):
+  return(a+b)
+def minus(a,b):
+  return(a-b)
+def multiply(a,b):
+  return(a*b)
+def mod(a,b):
+  return(a/b)
+def floordivision(a,b):
+  return(a//b)
+def rem(a,b):
+  return(a%b)
+a=int(input())
+b=int(input())
+print(add(a,b))
+print(minus(a,b))
+print(multiply(a,b))
+print(mod(a,b))
+print(floordivision(a,b))
+print(rem(a,b))
+
+
+#square root
+def function(a):
+   return a*a
+a=int(input())
+print(function(a))
+
+
+#cube root
+def function(a):
+   return a**3
+a=int(input())
+print(function(a))
