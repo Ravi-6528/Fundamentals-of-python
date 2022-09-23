@@ -1,0 +1,84 @@
+#series-1
+n=int(input())
+for i in range(1,n+1):
+    n=i**2
+    print(n,end='  ')
+    
+#series-2
+n=int(input())
+x=6
+print(x)
+for i in range(1,n):
+    x=x+i*5
+    print(x)
+    
+#series-3
+n=int(input())
+for i in range(1,n+1):
+    n=3**i
+    print(n,end=' ')
+    
+#series-4
+n=int(input())
+for i in range(0,n):
+    a=((3**i)/2)
+    print(a)
+    
+#series-5
+n=int(input())
+x=11
+for i in range(1,n+1):
+    a=(x**2)
+    print(a)
+    x=x+4
+    
+#series-6
+n=int(input())
+for i in range(1,n+1):
+    if (i%2!=0):
+        print((i**2)-1)
+    else:
+        print((i**2)-2)
+        
+#series-7
+n=int(input())
+x=1
+print(x)
+y=2.0
+print(y)
+for i in range(1,n-1):
+    if(i%2!=0):
+        x=x*3.0
+        print(x)
+    else:
+        if(i%2==0):
+            y=y*3.0
+            print(y)
+            
+#series-8
+n=int(input())
+a=4
+print(a)
+for i in range(1,n):
+    a=a+(i**2)
+    print(a)
+    
+#series-9
+n=int(input())
+x=2
+print(x)
+for i in range (0,n-1):
+    x=x**2-1
+    print(x)
+    
+    
+#series-10
+n = int(input())
+x = 95.0
+ctr = 1
+i = 20.5
+while ctr<=n:
+      print(x,end=" ")
+      x=x+i
+      i=i+2
+      ctr+=1
